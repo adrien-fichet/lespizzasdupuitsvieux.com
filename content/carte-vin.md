@@ -1,0 +1,3 @@
++++
+template = "carte-vin.html"
++++

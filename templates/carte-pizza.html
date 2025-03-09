@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<!--[if lte IE 6]> <html class="ie6 ie"> <![endif]-->
+<!--[if IE 7]> <html class="ie7 ie"> <![endif]-->
+<!--[if IE 8]> <html class="ie8 ie"> <![endif]-->
+<!--[if lt IE 9]>
+<script src="dist/html5shiv.js"></script>
+<![endif]-->
+<!--[if IE 9]> <html class="ie9 ie"> <![endif]-->
+<!--[if gt IE 9]><!--> <html> <!--<![endif]-->
+
+
+<head>
+<meta charset="utf-8" />
+        <title>Les Pizzas du Puits Vieux</title>
+        <meta name="description" content="Les Pizzas du Puits Vieux" />
+        <meta name="keywords" lang="fr" content="pizza restaurant saint priest lyon rhône restauration italien italie cuisine eurexpo porte des alpes  "/>
+		<meta name="keywords" lang="en" content="pizza restaurant italian saint priest lyon rhone eurexpo "/>
+        <meta name="p:domain_verify" content="613d150795115f28e6832b10319c7d4b"/>
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/carte.css" />
+        <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery.localscroll-1.2.7.js"></script>
+        <script type="text/javascript" src="js/jquery.scrollTo.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+
+        <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css' />
+        <link href='http://fonts.googleapis.com/css?family=Raleway:200,500,400' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Arapey:400italic,400' rel='stylesheet' type='text/css'>
+
+
+        <script>
+
+	$(function() {
+	  $('a[href*=#]:not([href=#])').click(function() {
+	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+	      var target = $(this.hash);
+	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	      if (target.length) {
+	        $('html,body').animate({
+	          scrollTop: target.offset().top
+	        }, 1000);
+	        return false;
+	      }
+	    }
+	  });
+	});
+
+	$(document).ready(function() {
+
+	(function ($) {
+		$('.tab ul.tabs').addClass('active').find('> li:eq(0)').addClass('current');
+
+		$('.tab ul.tabs li a').click(function (g) {
+			var tab = $(this).closest('.tab'),
+				index = $(this).closest('li').index();
+
+			tab.find('ul.tabs > li').removeClass('current');
+			$(this).closest('li').addClass('current');
+
+			tab.find('.tab_content').find('div.tabs_item').not('div.tabs_item:eq(' + index + ')').slideUp();
+			tab.find('.tab_content').find('div.tabs_item:eq(' + index + ')').slideDown();
+
+			g.preventDefault();
+		} );
+	})(jQuery);
+
+});
+		</script>
+
+
+</head>
+
+<body>
+
+<div class="header">
+	<div class="menu">
+    <div id="logo"><a href="index.html"><img src="sources/logo.png" width="auto" height="17px"></a></div>
+    	<a href="index.html#contact"><div class="onglet"> Contact </div></a>
+        <a href="index.html#presentation"><div class="onglet"> Carte </div></a>
+        <a href="index.html#news"><div class="onglet"> News </div></a>
+        <a href="index.html"><div class="onglet" id="onglet1"> Accueil </div></a>
+    </div>
+</div>
+
+<div class="home" id="home">
+<div class="pres-home">
+    </div>
+	<img src="sources/pizzas.jpg" width="100%" height="auto">
+</div>
+
+<div class="news" id="news">
+	<div class="news-titre">
+    	<p> NOS PIZZAS <hr> </p><br>
+        	<div class="flag">
+            	<div class="flagv"></div><div class="flagb"></div><div class="flagr"></div>
+        	</div>
+    </div>
+	<div class="news-image"><img src="sources/pizza-carte5.jpg" width="auto" height="110%"></div>
+    <div class="news-texte">
+    	<div class="news-texte-content">
+        <h2>Pizzas ronde Classique</h2><hr>
+        <p><h3>Authentique :</h3><h4>13,50€</h4> tomate - mozzarella - gorgonzola - roquette - parmesan- tomates cerise - perlines de mozzarella<br>
+           <h3>Black & White :</h3><h4>12,00€</h4> Nutella - banane - sucre glace<br>
+           <h3>Bolognaise :</h3><h4>12,00€</h4> tomate - viande - aromates - mozzarella<br>
+           <h3>Bordelaise :</h3><h4>13,00€</h4> crème de cèpes - ravioles - mozzarella - lardons - crème<br>
+           <h3>Botanique:</h3><h4>13,80€</h4> crème d'artichaut - artichaut persillés - mozzarella - tomates cerise - perlines de mozzarella - olives<br>
+           <h3>Bressane :</h3><h4>12,00€</h4>crème - poulet - mozzarella - pesto<br>
+           <h3>Bretonne :</h3><h4>11,50€</h4>crème - jambon - artichaut - mozzarella<br>
+           <h3>Campagnarde :</h3><h4>11,00€</h4> tomate - oeufs battus - lardons - mozzarella<br>
+           <h3>Capricieuse :</h3><h4>11,00€</h4>tomate - poivrons - oignons - mozzarella<br>
+           <h3>Carbonara :</h3><h4>10,50€</h4>tomate - jambon - mozzarella<br>
+           <h3>Champignon :</h3><h4>10,00€</h4>tomate - champignons - mozzarella<br>
+           <h3>Chef:</h3><h4>12,00€</h4> tomate - champignons - mozzarella - chorizo - lardons - crème <br>
+           <h3>Chevretine :</h3><h4>10,50€</h4>tomate - mozzarella - chèvre<br>
+           <h3>Cht'i :</h3><h4>13,00€</h4>oignons - crème - mozzarella - lardons - maroilles<br>
+           <h3>Délice :</h3><h4>11,50€</h4>tomate - jambon cru - oeuf - mozzarella<br>
+           <h3>Dessert :</h3><h4>12,50€</h4>amandes - noisettes - noix - pralines - crème - sucre glace <br>
+           <h3>Enfant :</h3><h4>6,50€</h4>tomate - jambon - mozzarella<br>
+           <h3>Escargot :</h3><h4>12,50€</h4>tomate - persillade - escargots - mozzarella<br>
+           <h3>Florentine :</h3><h4>12,00€</h4>mozzarella - crème - gorgonzola - coppa - noix<br>
+           <h3>Fermière :</h3><h4>12,00€</h4>mozzarella - chèvre - gorgonzola - crème - miel<br>
+           <h3>Forestière :</h3><h4>11,00€</h4>champignons - lardons - mozzarella - crème<br>
+           <h3>Fromagère :</h3><h4>12,00€</h4>tomate - mozzarella - chèvre & bleu <br>
+           <h3>Fruits de mer  :</h3><h4>11,80€</h4>tomate - fruits de mer - olives - mozzarella<br>
+           <h3>Gourmande :</h3><h4>11,80€</h4>tomate - champignons - jambon - mozzarella<br>
+           <h3>Lyonnaise :</h3><h4>12,80€</h4>crème - oignons - andouille - moutarde - mozzarella<br>
+           <h3>Maison :</h3><h4>11,50€</h4>tomate - mortadelle - chorizo - jambon - mozzarella<br>
+           <h3>Marguerita :</h3><h4>10,00€</h4>tomate - mozzarella - olives<br>
+           <h3>Milanaise :</h3><h4>14,00€</h4>tomate - mozzarella - coppa - roquette - tomate cerise - fromage de brebis - perlines de mozzarella<br>
+           <h3>Montagnarde :</h3><h4>13,00€</h4>crème de cèpes - pommes de terre - mozzarella - diots de savoie<br>
+           <h3>Norvégienne :</h3><h4>12,50€</h4>saumon - crème - mozzarella<br>
+           <h3>Orientale :</h3><h4>11,80€</h4>tomate - poulet - merguez - mozzarella<br>
+           <h3>Parmigianna :</h3><h4>12,80€</h4>tomate - mozzarella - boeuf haché - aubergines grillés - parmesan rapé<br>
+           <h3>Pervenche :</h3><h4>11,80€</h4> tomate - aubergines - poulet - mozzarella - olives <br>
+           <h3>Quatre Saisons :</h3><h4>12,00€</h4>tomate - oignons - poivrons - champignons - aubergines - mozzarella<br>
+           <h3>Québécoise:</h3><h4>13,50€</h4>Crème, Mozzarella, Bacon, Chèvre, Cramberry, Noix de pécan, Confiture de Cramberry, Sirop d'érable<br>
+           <h3>Romaine :</h3><h4>10,50€</h4>tomate - anchois - olives - mozzarella<br>
+           <h3>Roquefort :</h3><h4>10,80€</h4>tomate - mozzarella - roquefort<br>
+           <h3>Savoyarde :</h3><h4>12,50€</h4>pommes de terre - lardons - oignons - crème - mozzarella - reblochon<br>
+           <h3>Spéciale :</h3><h4>11,00€</h4>oignons - lardons - crème - mozzarella<br>
+           <h3>Tartufo :</h3><h4>14,50€</h4>Crème de pecorino truffé, Mozzarella fior di latte, Roquette,
+Jambon, Pecorino truffé<br>
+           <h3>Tonus :</h3><h4>12,50€</h4>tomate - mozzarella - bacon - brie - crème<br></p><br>
+    </div> </div>
+    <div class="news-texte2">
+    	<div class="news-texte-content">
+        <h2>Pizzas TEGLIA pâte épaisse 40x60cm</h2><hr>
+        <p><h4>Uniquement sur commande 7 jours à l'avance, merci de votre compréhension.</h4><br>
+		   <p><h3>Authentique :</h3><h4>53,00€</h4> tomate - mozzarella - gorgonzola - roquette - parmesan- tomates cerise - perlines de mozzarella<br>
+           <h3>Bolognaise :</h3><h4>45,00€</h4> tomate - viande - aromates - mozzarella<br>
+           <h3>Bordelaise :</h3><h4>49,00€</h4> crème de cèpes - ravioles - mozzarella - lardons - crème<br>
+           <h3>Botanique:</h3><h4>50,00€</h4> crème d'artichaut - artichaut persillés - mozzarella - tomates cerise - perlines de mozzarella - olives<br>
+           <h3>Bressane :</h3><h4>43,00€</h4>crème - poulet - mozzarella - pesto<br>
+           <h3>Bretonne :</h3><h4>42,00€</h4>crème - jambon - artichaut - mozzarella<br>
+           <h3>Campagnarde :</h3><h4>40,00€</h4> tomate - oeufs battus - lardons - mozzarella<br>
+           <h3>Capricieuse :</h3><h4>40,00€</h4>tomate - poivrons - oignons - mozzarella<br>
+           <h3>Carbonara :</h3><h4>43,00€</h4>tomate - jambon - mozzarella<br>
+           <h3>Champignon :</h3><h4>39,00€</h4>tomate - champignons - mozzarella<br>
+           <h3>Chef:</h3><h4>45,00€</h4> tomate - champignons - mozzarella - chorizo - lardons - crème <br>
+           <h3>Chevretine :</h3><h4>39,00€</h4>tomate - mozzarella - chèvre<br>
+           <h3>Cht'i :</h3><h4>43,00€</h4>oignons - crème - mozzarella - lardons - maroilles<br>
+           <h3>Délice :</h3><h4>45,00€</h4>tomate - jambon cru - oeuf - mozzarella<br>
+           <h3>Escargot :</h3><h4>52,00€</h4>tomate - persillade - escargots - mozzarella<br>
+           <h3>Florentine :</h3><h4>49,00€</h4>mozzarella - crème - gorgonzola - coppa - noix<br>
+           <h3>Fermière :</h3><h4>49,00€</h4>mozzarella - chèvre - gorgonzola - crème - miel<br>
+           <h3>Forestière :</h3><h4>43,00€</h4>champignons - lardons - mozzarella - crème<br>
+           <h3>Fromagère :</h3><h4>45,00€</h4>tomate - mozzarella - chèvre & bleu <br>
+           <h3>Fruits de mer  :</h3><h4>48,00€</h4>tomate - fruits de mer - olives - mozzarella<br>
+           <h3>Gourmande :</h3><h4>43,00€</h4>tomate - champignons - jambon - mozzarella<br>
+           <h3>Lyonnaise :</h3><h4>49,00€</h4>crème - oignons - andouille - moutarde - mozzarella<br>
+           <h3>Maison :</h3><h4>40,00€</h4>tomate - mortadelle - chorizo - jambon - mozzarella<br>
+           <h3>Marguerita :</h3><h4>41,00€</h4>tomate - mozzarella - olives<br>
+           <h3>Milanaise :</h3><h4>53,00€</h4>tomate - mozzarella - coppa - roquette - tomate cerise - fromage de brebis - perlines de mozzarella<br>
+           <h3>Montagnarde :</h3><h4>49,00€</h4>crème de cèpes - pommes de terre - mozzarella - diots de savoie<br>
+           <h3>Norvégienne :</h3><h4>47,00€</h4>saumon - crème - mozzarella<br>
+           <h3>Orientale :</h3><h4>43,00€</h4>tomate - poulet - merguez - mozzarella<br>
+           <h3>Parmigianna :</h3><h4>47,00€</h4>tomate - mozzarella - boeuf haché - aubergines grillés - parmesan rapé<br>
+           <h3>Pervenche :</h3><h4>44,00€</h4> tomate - aubergines - poulet - mozzarella - olives <br>
+           <h3>Quatre Saisons :</h3><h4>44,00€</h4>tomate - oignons - poivrons - champignons - aubergines - mozzarella<br>
+           <h3>Québécoise:</h3><h4>49,00€</h4>Crème, Mozzarella, Bacon, Chèvre, Cramberry, Noix de pécan, Confiture de Cramberry<br>
+           <h3>Romaine :</h3><h4>41,00€</h4>tomate - anchois - olives - mozzarella<br>
+           <h3>Roquefort :</h3><h4>42,00€</h4>tomate - mozzarella - roquefort<br>
+           <h3>Savoyarde :</h3><h4>48,00€</h4>pommes de terre - lardons - oignons - crème - mozzarella - reblochon<br>
+           <h3>Spéciale :</h3><h4>43,00€</h4>oignons - lardons - crème - mozzarella<br>
+           <h3>Tonus :</h3><h4>48,00€</h4>tomate - mozzarella - bacon - brie - crème<br></p><br>
+           <a href="index.html#presentation" class="info">Retour carte</a></div>
+    </div> </div>
+
+
+
+
+
+
+</div>
+
+<div class="footer">
+<div class="link"><a href="https://www.facebook.com/pages/Les-pizzas-du-puits-vieux/103684396457692?fref=ts&locale=fr_FR" target="_blank"><img src="sources/fb.png" width="35x" height="auto"></a><br><br> Suivez notre actualité sur facebook<br><br><br><br>
+<a href="index.html"><div class="onglet-footer"> Accueil </div></a>
+<a href="index.html#news"><div class="onglet-footer"> News </div></a>
+<a href="index.html#presentation"><div class="onglet-footer"> Carte </div></a>
+<a href="index.html#contact"><div class="onglet-footer"> Contact </div></a>
+<br><br><br>
+<a href="https://www.economie.gouv.fr/dgccrf/Publications/Vie-pratique/Fiches-pratiques/Allergene-alimentaire" target="_blank"><div class="dev"> Liste des Allergènes Officielle DGCCRF - La liste est disponible imprimée au magasin. </div></a>
+<a href="http://www.valentinlombardi.fr" target="_blank"><div class="dev"> Design & Développement: Valentin Lombardi </div></a>
+<div class="dev">Les Pizzas du Puits Vieux - Marque Déposéé à l'INPI - Société à responsabilité limitée - 43 rue du puits vieux 69800 Saint-Priest - tel:04 78 20 08 81 - SIRET 39783766700013  RCS Lyon B 397 837 667 </div>
+
+
+</div>
+
+
+</body>
+</html>
