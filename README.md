@@ -17,6 +17,8 @@ The static website generator used is [Zola](https://www.getzola.org).
 
 Run the Zola development server with: `zola serve --open`
 
+The new website is deployed on GitHub Pages: [adrien-fichet.github.io/lespizzasdupuitsvieux.com/](https://adrien-fichet.github.io/lespizzasdupuitsvieux.com/)
+
 ## Original website copy
 
 A copy of the original website is available in `_original`.

@@ -16,15 +16,15 @@
         <meta name="keywords" lang="fr" content="pizza restaurant saint priest lyon rhône restauration italien italie cuisine eurexpo porte des alpes  "/>
 		<meta name="keywords" lang="en" content="pizza restaurant italian saint priest lyon rhone eurexpo "/>
         <meta name="p:domain_verify" content="613d150795115f28e6832b10319c7d4b"/>
-        <META http-equiv="Pragma" content="no-cache"> 
+        <META http-equiv="Pragma" content="no-cache">
 
-        <link rel="stylesheet" href="css/reset.css" />
-        <link rel="stylesheet" href="css/home.css" />
-        <link rel="stylesheet" href="css/specimen_stylesheet.css" />
-        <link rel="stylesheet" href="css/grid_12-825-55-15.css" />
-        <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
-        <script type="text/javascript" src="js/jquery.localscroll-1.2.7.js"></script>
-        <script type="text/javascript" src="js/jquery.scrollTo.js"></script>
+        <link rel="stylesheet" href="{{ get_url(path="css/reset.css") }}" />
+        <link rel="stylesheet" href="{{ get_url(path="css/home.css") }}" />
+        <link rel="stylesheet" href="{{ get_url(path="css/specimen_stylesheet.css") }}" />
+        <link rel="stylesheet" href="{{ get_url(path="css/grid_12-825-55-15.css") }}" />
+        <script type="text/javascript" src="{{ get_url(path="js/jquery-1.9.1.min.js") }}"></script>
+        <script type="text/javascript" src="{{ get_url(path="js/jquery.localscroll-1.2.7.js") }}"></script>
+        <script type="text/javascript" src="{{ get_url(path="js/jquery.scrollTo.js") }}"></script>
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
 
         <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css' />
@@ -32,9 +32,9 @@
         <link href='http://fonts.googleapis.com/css?family=Arapey:400italic,400' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet' type='text/css'>
 
-        
+
         <script>
-		
+
 	$(function() {
 	  $('a[href*=#]:not([href=#])').click(function() {
 	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -50,29 +50,29 @@
 	    }
 	  });
 	});
-	
-	$(document).ready(function() { 
 
-	(function ($) { 
+	$(document).ready(function() {
+
+	(function ($) {
 		$('.tab ul.tabs').addClass('active').find('> li:eq(0)').addClass('current');
-		
-		$('.tab ul.tabs li a').click(function (g) { 
-			var tab = $(this).closest('.tab'), 
+
+		$('.tab ul.tabs li a').click(function (g) {
+			var tab = $(this).closest('.tab'),
 				index = $(this).closest('li').index();
-			
+
 			tab.find('ul.tabs > li').removeClass('current');
 			$(this).closest('li').addClass('current');
-			
+
 			tab.find('.tab_content').find('div.tabs_item').not('div.tabs_item:eq(' + index + ')').slideUp();
 			tab.find('.tab_content').find('div.tabs_item:eq(' + index + ')').slideDown();
-			
+
 			g.preventDefault();
 		} );
 	})(jQuery);
 
 });
 		</script>
-        
+
         <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -83,27 +83,27 @@
   ga('send', 'pageview');
 
 </script>
-        
-        
+
+
 </head>
 
 <body>
 
 <div class="header">
 	<div class="menu">
-    <div id="logo"><a href="index.html"><img src="sources/logo.png" width="auto" height="17px"></a></div>
-    	<a href="index.html#contact"><div class="onglet"> Contact </div></a>
-        <a href="index.html#presentation"><div class="onglet"> Carte </div></a>
-        <a href="index.html#news"><div class="onglet"> News </div></a>
-        <a href="index.html#home"><div class="onglet" id="onglet1"> Accueil </div></a>
+    <div id="logo"><a href="{{ get_url(path="index.html") }}"><img src="{{ get_url(path="sources/logo.png") }}" width="auto" height="17px"></a></div>
+    	<a href="{{ get_url(path="index.html#contact") }}"><div class="onglet"> Contact </div></a>
+        <a href="{{ get_url(path="index.html#presentation") }}"><div class="onglet"> Carte </div></a>
+        <a href="{{ get_url(path="index.html#news") }}"><div class="onglet"> News </div></a>
+        <a href="{{ get_url(path="index.html#home") }}"><div class="onglet" id="onglet1"> Accueil </div></a>
     </div>
-</div>    
+</div>
 
 <div class="home" id="home">
 <div class="pres-home">
     </div>
-	<img src="sources/home6.jpg" width="100%" height="auto">
-</div>    
+	<img src="{{ get_url(path="sources/home6.jpg") }}" width="100%" height="auto">
+</div>
 
 <div class="news" id="news">
 	<div class="news-titre">
@@ -112,7 +112,7 @@
             	<div class="flagv"></div><div class="flagb"></div><div class="flagr"></div>
         	</div>
     </div>
-	<div class="news-image"><img src="sources/news-plaque.jpg" width="auto" height="100%"></div>
+	<div class="news-image"><img src="{{ get_url(path="sources/news-plaque.jpg") }}" width="auto" height="100%"></div>
     <div class="news-texte">
     	<div class="news-texte-content">
         <h2>PIZZA TEGLIA, LA PÂTE ÉPAISSE À L'ANCIENNE</h2><hr><br>
@@ -120,81 +120,81 @@
 							Avec une recette traditionnelle de pâte épaisse, en format 40x60cm pour toutes les occasions.</h3><br>
                         <p>À commander 7 jours à l'avance.
                         </p><br><br>
-                        <a href="index.html#presentation" class="info">Voir la carte</a></div>
+                        <a href="{{ get_url(path="index.html#presentation") }}" class="info">Voir la carte</a></div>
     </div>
     <div class="bloc-actu">
-    
-    
+
+
     <div class="view view-tenth">
-                    <img src="sources/onglet-plaque.jpg" width="auto" height="250"/>
+                    <img src="{{ get_url(path="sources/onglet-plaque.jpg") }}" width="auto" height="250"/>
                     <div class="mask">
                         <h2>NOUVELLE RECETTE ! </h2>
                         <p>Pizza Teglia, Nouvelle recette !</p>
-                        <a href="index.html#news" class="info">Voir plus</a>
+                        <a href="{{ get_url(path="index.html#news") }}" class="info">Voir plus</a>
                     </div>
         </div>
-        
+
         <div class="view view-tenth">
-                    <img src="sources/onglet-tiramisu.jpg" width="auto" height="250"/>
+                    <img src="{{ get_url(path="sources/onglet-tiramisu.jpg") }}" width="auto" height="250"/>
                     <div class="mask">
                         <h2>NOUVEAU</h2>
                         <p>Nos recettes du moment</p>
-                        <a href="news-tiramisu.html#news" class="info">Voir plus</a>
+                        <a href="{{ get_url(path="news-tiramisu.html#news") }}" class="info">Voir plus</a>
                     </div>
         </div>
-        
-    
+
+
     	<div class="view view-tenth">
-                    <img src="sources/calzone-onglet.jpg" width="auto" height="250"/>
+                    <img src="{{ get_url(path="sources/calzone-onglet.jpg") }}" width="auto" height="250"/>
                     <div class="mask">
                         <h2>NOUVEAU </h2>
                         <p>Le Calzone à 11,00€</p>
-                        <a href="news-calzone.html#news" class="info">Voir plus</a>
+                        <a href="{{ get_url(path="news-calzone.html#news") }}" class="info">Voir plus</a>
                     </div>
         </div>
-        
+
         <div class="view view-tenth">
-                    <img src="sources/glaces-2.png" width="auto" height="250"/>
+                    <img src="{{ get_url(path="sources/glaces-2.png") }}" width="auto" height="250"/>
                     <div class="mask">
                         <h2>Gemelli - Gelati & Sorbetti</h2>
                         <p>Glaces et sorbets italiens légers et naturels</p>
-                        <a href="carte-dessert.html" class="info">Voir plus</a>
+                        <a href="{{ get_url(path="carte-dessert.html") }}" class="info">Voir plus</a>
                     </div>
         </div>
-        
-        
+
+
         <div class="view view-tenth">
-                    <img src="sources/lasagnes.jpg" width="auto" height="250"/>
+                    <img src="{{ get_url(path="sources/lasagnes.jpg") }}" width="auto" height="250"/>
                     <div class="mask">
                         <h2>Lasagnes</h2>
                         <p>Lasagnes faites maison..</p>
-                        <a href="news-lasagnes.html#news" class="info">Voir plus</a>
+                        <a href="{{ get_url(path="news-lasagnes.html#news") }}" class="info">Voir plus</a>
                     </div>
         </div>
-        
+
         <div class="view view-tenth">
-                    <img src="sources/news.jpg" width="auto" height="250"/>
+                    <img src="{{ get_url(path="sources/news.jpg") }}" width="auto" height="250"/>
                     <div class="mask">
                         <h2>Pizza Burger</h2>
                         <p>Authentique réinterprétation d'un burger dans le respect de la pizza traditionnelle...</p>
-                        <a href="news-burger.html#news" class="info">Voir plus</a>
+                        <a href="{{ get_url(path="news-burger.html#news") }}" class="info">Voir plus</a>
                     </div>
         </div>
-       
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
+
 
 
     </div>
-    
-</div>    
+
+</div>
 
 <div class="presentation" id="presentation">
-<img src="sources/IMG_76372.jpg" width="100%" height="auto">
+<img src="{{ get_url(path="sources/IMG_76372.jpg") }}" width="100%" height="auto">
 	<div class="pres-titre">
     	<p> NOTRE CARTE <hr> </p><br>
         	<div class="flag">
@@ -203,23 +203,23 @@
         <h1> Depuis 1987 la pizzeria du puits vieux met un point d'honneur à proposer une carte de qualité irréprochable. Tous nos produits sont sont frais, sélectionnés, et cuisinés par nos soins pour vous proposer plats et pizzas de qualité, dans le respect de la cuisine traditionnelle italienne.<br><br>
  Situé au 43, rue du puis vieux à Saint Priest, notre équipe vous accueille tous les jours du Lundi au Dimanche de 17h à 21h.</h1><br><br><br><br><br><br><br>
     <div class="carte-pizza" id="carte">
-    	<a href="carte-vin.html"><div class="picto-boisson">
-        	<img src="sources/boisson.png" ><br><br><br><br><br><br>
+    	<a href="{{ get_url(path="carte-vin.html") }}"><div class="picto-boisson">
+        	<img src="{{ get_url(path="sources/boisson.png") }}" ><br><br><br><br><br><br>
         	<div  class="bouton-carte">BOISSONS </div>
         </div></a>
-    	<a href="carte-pizza.html"><div class="picto-pizza">
-        	<img src="sources/pizza2.png" ><br><br><br><br><br><br>
+    	<a href="{{ get_url(path="carte-pizza.html") }}"><div class="picto-pizza">
+        	<img src="{{ get_url(path="sources/pizza2.png") }}" ><br><br><br><br><br><br>
         	<div  class="bouton-carte"> PIZZAS </div>
         </div></a>
-        <a href="carte-dessert.html"><div class="picto-dessert">
-        	<img src="sources/dessert.png"><br><br><br><br><br>
+        <a href="{{ get_url(path="carte-dessert.html") }}"><div class="picto-dessert">
+        	<img src="{{ get_url(path="sources/dessert.png") }}"><br><br><br><br><br>
         	<div  class="bouton-carte"> DESSERTS </div>
         </div></a>
     </div>
-    
-    
-</div>   
-</div> 
+
+
+</div>
+</div>
 
 <div class="contact" id="contact">
 	<div class="infos"><p> Les Pizzas du Puits Vieux<br>
@@ -232,24 +232,24 @@
 Horaires d'été 18h à 22h jusqu'au 1er Octobre</p><br> <hr>
                            <p><br>Pour commander par téléphone: <br>
 						   04.78.20.08.81<br></p></div>
-                           
+
     <div class="carte">
     	<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2786.5912665860346!2d4.950159!3d45.699174!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4c47453ca1735%3A0x7db0ac0f80bb003d!2sLes+Pizzas+du+Puits+Vieux!5e0!3m2!1sfr!2sfr!4v1425339203885" width="100%" height="400px" frameborder="0" style="border:0"></iframe>
     </div>
-</div>  
+</div>
 
 <div class="footer">
-<div class="link"><a href="https://www.facebook.com/pages/Les-pizzas-du-puits-vieux/103684396457692?fref=ts&locale=fr_FR" target="_blank"><img src="sources/fb.png" width="35x" height="auto"></a><br><br> Suivez notre actualité sur facebook<br><br><br><br>
-<a href="index.html#home"><div class="onglet-footer"> Accueil </div></a>
-<a href="index.html#news"><div class="onglet-footer"> News </div></a>
-<a href="index.html#presentation"><div class="onglet-footer"> Carte </div></a>
-<a href="index.html#contact"><div class="onglet-footer"> Contact </div></a>
+<div class="link"><a href="https://www.facebook.com/pages/Les-pizzas-du-puits-vieux/103684396457692?fref=ts&locale=fr_FR" target="_blank"><img src="{{ get_url(path="sources/fb.png") }}" width="35x" height="auto"></a><br><br> Suivez notre actualité sur facebook<br><br><br><br>
+<a href="{{ get_url(path="index.html#home") }}"><div class="onglet-footer"> Accueil </div></a>
+<a href="{{ get_url(path="index.html#news") }}"><div class="onglet-footer"> News </div></a>
+<a href="{{ get_url(path="index.html#presentation") }}"><div class="onglet-footer"> Carte </div></a>
+<a href="{{ get_url(path="index.html#contact") }}"><div class="onglet-footer"> Contact </div></a>
 <br><br><br>
 <a href="https://www.economie.gouv.fr/dgccrf/Publications/Vie-pratique/Fiches-pratiques/Allergene-alimentaire" target="_blank"><div class="dev"> Liste des Allergènes Officielle DGCCRF - La liste est disponible imprimée au magasin. </div></a>
 <a href="http://www.valentinlombardi.fr" target="_blank"><div class="dev"> Design & Développement: Valentin Lombardi </div></a>
 <div class="dev">Les Pizzas du Puits Vieux - Marque Déposéé à l'INPI - Société à responsabilité limitée - 43 rue du puits vieux 69800 Saint-Priest - tel:04 78 20 08 81 - SIRET 39783766700013  RCS Lyon B 397 837 667 </div>
 
-        
+
 </div>
 
 
