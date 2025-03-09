@@ -5,7 +5,7 @@
 The objective is to rewrite the static website [lespizzasdupuitsvieux.com](http://lespizzasdupuitsvieux.com/index.html) with a static website generator, in order to:
 
 - update the content more easily (Markdown)
-- add new features more easily (eg. RWD)
+- modernize it (RWD, HTTPS, a11y, etc.)
 
 ## Requirements
 
