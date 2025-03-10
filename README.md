@@ -2,7 +2,7 @@
 
 ## Objective
 
-The objective is to rewrite the static website [lespizzasdupuitsvieux.com](http://lespizzasdupuitsvieux.com/index.html) with a static website generator, in order to:
+The objective is to rewrite the website [lespizzasdupuitsvieux.com](http://lespizzasdupuitsvieux.com/index.html) with a static site generator, in order to:
 
 - update the content more easily (Markdown)
 - modernize it (RWD, HTTPS, a11y, etc.)
@@ -13,7 +13,7 @@ The objective is to rewrite the static website [lespizzasdupuitsvieux.com](http:
 
 ## Implementation
 
-The static website generator used is [Zola](https://www.getzola.org).
+The static site generator used is [Zola](https://www.getzola.org).
 
 Run the Zola development server with: `zola serve --open`
 

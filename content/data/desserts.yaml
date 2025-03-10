@@ -1,0 +1,16 @@
+---
+- title: Tiramisù
+  img: sources/tiramisu.jpg
+  price: 5,50€
+  subtitle: Patisserie traditionnelle de la cuisine italienne, un véritable tiramisù au café fait maison.
+  text: Portion pour 1 à 2 personnes
+
+- title: Glaces Gemelli
+  img: sources/glaces.png
+  price: 4,50 €
+  subtitle: >-
+    Large sélection de glaces et sorbets italiens légers et 100% naturels, <br>produits en Drôme provençale (26) par
+    un Maestro del gelato: l'artisan glacier Gemelli.<br>
+  text: >-
+    Caramel beurre salé, Chocolat au lait, Coco, Noisette, Pistache, Stracciatella, Limoncello,<br>
+    Pamplemousse, Vanille... etc

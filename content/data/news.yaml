@@ -1,0 +1,56 @@
+---
+burger:
+  img: sources/news.jpg
+  title: Pizza Burger - 13,80€
+  subtitle: >-
+    Création unique des Pizzas du Puits Vieux, une authentique réinterprétation d'un burger dans le respect
+    de la pizza traditionnelle...
+  text: >-
+    200g de viande haché<br>
+    Cheddar<br>
+    Oignons<br>
+    Cornichons<br>
+    Tomates<br>
+    Salade <br>
+    Sauce barbecue
+
+calzone:
+  img: sources/calzone.jpg
+  title: "NOUVEAU : LE CALZONE 11,00€"
+  subtitle: "Nouveau sur la carte, Les Pizzas du Puits Vieux vous présente son Calzone :"
+  text: >-
+    Crème<br>
+    Jambon<br>
+    Ricotta<br>
+    Mozzarella<br>
+    Origan
+
+lasagnes:
+  img: sources/news-lasagnes.jpg
+  title: Lasagnes  - 17,50€/kg
+  subtitle: >-
+    Les lasagnes des Pizzas du Puits Vieux, faites maison <br>
+    disponibles fraîches ou surgelées.<br><br>
+    En plat pour 3 à 7 pers. au choix<br>
+    ou en portions individuelles
+  text: >-
+    Pâte aux oeufs<br>
+    Sauce bolognaise<br>
+    Sauce béchamel<br>
+    Parmesan
+
+tiramisu:
+  img: sources/tiramisu-fr.jpg
+  title: Nos Tiramisù
+  subtitle: Découvrez nos nouvelles recettes de Tiramisù faits maison.
+  dessert: true
+  text: >-
+    Tiramisù Classique au café ou recettes du moment : 6,50€ <br><br><br>
+
+teglia:
+  img: sources/news-plaque.jpg
+  title: PIZZA TEGLIA, LA PÂTE ÉPAISSE À L'ANCIENNE
+  subtitle: >-
+    Les pizzas du puits vieux vous propose aussi sa carte de Pizza Teglia.<br>
+    Avec une recette traditionnelle de pâte épaisse, en format 40x60cm pour toutes les occasions.
+  text: À commander 7 jours à l'avance.

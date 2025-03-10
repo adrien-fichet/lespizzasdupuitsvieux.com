@@ -1,0 +1,28 @@
+{% extends "structure/3-header-footer.html" %}
+
+{% block container %}
+
+<div class="home" id="home">
+<div class="pres-home">
+    </div>
+
+	{% if root.extra.home_img %}
+		{% set home_img = root.extra.home_img %}
+	{% else %}
+		{% set home_img = "sources/home6.jpg" %}
+	{% endif %}
+	<img src="{{ get_url(path=home_img) }}" width="100%" height="auto">
+</div>
+
+<div class="{% if root.extra.news_class %}{{ root.extra.news_class }}{% else %}news{% endif %}" id="news">
+	<div class="news-titre">
+    	<p> {{ root.title }} <hr> </p><br>
+        	<div class="flag">
+            	<div class="flagv"></div><div class="flagb"></div><div class="flagr"></div>
+        	</div>
+    </div>
+
+    {% block content %} {% endblock %}
+</div>
+
+{% endblock container %}

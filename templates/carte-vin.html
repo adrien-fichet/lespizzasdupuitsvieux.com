@@ -1,159 +1,23 @@
-<!DOCTYPE html>
-<!--[if lte IE 6]> <html class="ie6 ie"> <![endif]-->
-<!--[if IE 7]> <html class="ie7 ie"> <![endif]-->
-<!--[if IE 8]> <html class="ie8 ie"> <![endif]-->
-<!--[if lt IE 9]>
-<script src="dist/html5shiv.js"></script>
-<![endif]-->
-<!--[if IE 9]> <html class="ie9 ie"> <![endif]-->
-<!--[if gt IE 9]><!--> <html> <!--<![endif]-->
+{% extends "structure/5-carte.html" %}
 
+{% block content %}
 
-<head>
-<meta charset="utf-8" />
-        <title>Les Pizzas du Puits Vieux</title>
-        <meta name="description" content="Les Pizzas du Puits Vieux" />
-        <meta name="keywords" lang="fr" content="pizza restaurant saint priest lyon rhône restauration italien italie cuisine eurexpo porte des alpes  "/>
-		<meta name="keywords" lang="en" content="pizza restaurant italian saint priest lyon rhone eurexpo "/>
-        <meta name="p:domain_verify" content="613d150795115f28e6832b10319c7d4b"/>
-        <link rel="stylesheet" href="{{ get_url(path="css/reset.css") }}" />
-        <link rel="stylesheet" href="{{ get_url(path="css/carte.css") }}" />
-        <script type="text/javascript" src="{{ get_url(path="js/jquery-1.9.1.min.js") }}"></script>
-        <script type="text/javascript" src="{{ get_url(path="js/jquery.localscroll-1.2.7.js") }}"></script>
-        <script type="text/javascript" src="{{ get_url(path="js/jquery.scrollTo.js") }}"></script>
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
-
-        <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css' />
-        <link href='http://fonts.googleapis.com/css?family=Raleway:200,500,400' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Arapey:400italic,400' rel='stylesheet' type='text/css'>
-
-
-        <script>
-
-	$(function() {
-	  $('a[href*=#]:not([href=#])').click(function() {
-	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-
-	      var target = $(this.hash);
-	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-	      if (target.length) {
-	        $('html,body').animate({
-	          scrollTop: target.offset().top
-	        }, 1000);
-	        return false;
-	      }
-	    }
-	  });
-	});
-
-	$(document).ready(function() {
-
-	(function ($) {
-		$('.tab ul.tabs').addClass('active').find('> li:eq(0)').addClass('current');
-
-		$('.tab ul.tabs li a').click(function (g) {
-			var tab = $(this).closest('.tab'),
-				index = $(this).closest('li').index();
-
-			tab.find('ul.tabs > li').removeClass('current');
-			$(this).closest('li').addClass('current');
-
-			tab.find('.tab_content').find('div.tabs_item').not('div.tabs_item:eq(' + index + ')').slideUp();
-			tab.find('.tab_content').find('div.tabs_item:eq(' + index + ')').slideDown();
-
-			g.preventDefault();
-		} );
-	})(jQuery);
-
-});
-		</script>
-
-
-</head>
-
-<body>
-
-<div class="header">
-	<div class="menu">
-    <div id="logo"><a href="{{ get_url(path="@/_index.md") }}"><img src="{{ get_url(path="sources/logo.png") }}" width="auto" height="17px"></a></div>
-    	<a href="{{ get_url(path="@/_index.md#contact") }}"><div class="onglet"> Contact </div></a>
-        <a href="{{ get_url(path="@/_index.md#presentation") }}"><div class="onglet"> Carte </div></a>
-        <a href="{{ get_url(path="@/_index.md#news") }}"><div class="onglet"> News </div></a>
-        <a href="{{ get_url(path="@/_index.md") }}"><div class="onglet" id="onglet1"> Accueil </div></a>
-    </div>
-</div>
-
-<div class="home" id="home">
-<div class="pres-home">
-    </div>
-	<img src="{{ get_url(path="sources/amaro.jpg") }}" width="100%" height="auto">
-</div>
-
-<div class="news-vin" id="news">
-	<div class="news-titre">
-    	<p> NOS BOISSONS <hr> </p><br>
-        	<div class="flag">
-            	<div class="flagv"></div><div class="flagb"></div><div class="flagr"></div>
-        	</div>
-    </div>
-
-
-
-	<div class="news-image-vin"><img src="{{ get_url(path="sources/vin.jpg") }}" width="auto" height="110%"></div>
+{% for item in load_data(path="content/data/boissons.yaml", format="yaml") %}
+	<div class="news-image-vin"><img src="{{ get_url(path=item.img) }}" width="auto" height="110%"></div>
     <div class="news-texte-vin">
     	<div class="news-texte-content">
-        <h2>Carte des vins</h2><hr><br>
-        <h4>Pour accompagner votre repas, les pizzas du puits vieux vous propose <br>
-			une sélection de vins italiens, blanc, rouge ou rosé.</h4><br>
-        <p>Lambrusco<br>
-		    Chianti<br>
-			Le colline dei filari<br>
-			Lacryma Christi del vesuvio Rouge ou Rosé<br>
-            Bardolino Rouge ou Rosé <br>
-            Nero d'Avola<br>
-            Valpolicella<br>
-			</p><br>
+        <h2>{{ item.title }}</h2><hr><br>
+        <h4>{{ item.description | safe }}</h4><br>
+				<p>
+
+				{% if item.text %}
+					{{ item.text | safe }}
+					<br><br>
+				{% endif %}
+
+				<a href="{{ get_url(path="@/_index.md#presentation") }}" class="info">Retour carte</a>
+				</p><br>
     </div> </div>
+{% endfor %}
 
-
-
-
-    <div class="news-image-vin"><img src="{{ get_url(path="sources/spritz.jpg") }}" width="auto" height="110%"></div>
-    <div class="news-texte-vin">
-    	<div class="news-texte-content">
-        <h2>NOUVEAU - Spritz - 3,50€</h2><hr><br>
-                        <h4>Nouveau, le cocktail préféré des Italiens dans votre pizzeria.</h4><br>
-                        <p>
-							Bouteille de 250mL de la gamme "EspritzLibre" prêt à consommer.<br>
-Il ne vous reste plus qu’à décapsuler,ajouter quelques glaçons pour qu’il soit bien frais et de le perfectionner avec un quartier d’orange.<br><br>
-<br>
-</p><br>
-            <a href="{{ get_url(path="@/_index.md#presentation") }}" class="info">Retour carte</a></div>
-
-    </div> </div>
-
-
-
-
-
-
-
-</div>
-
-<div class="footer">
-<div class="link"><a href="https://www.facebook.com/pages/Les-pizzas-du-puits-vieux/103684396457692?fref=ts&locale=fr_FR" target="_blank"><img src="{{ get_url(path="sources/fb.png") }}" width="35x" height="auto"></a><br><br> Suivez notre actualité sur facebook<br><br><br><br>
-<a href="{{ get_url(path="@/_index.md") }}"><div class="onglet-footer"> Accueil </div></a>
-<a href="{{ get_url(path="@/_index.md#news") }}"><div class="onglet-footer"> News </div></a>
-<a href="{{ get_url(path="@/_index.md#presentation") }}"><div class="onglet-footer"> Carte </div></a>
-<a href="{{ get_url(path="@/_index.md#contact") }}"><div class="onglet-footer"> Contact </div></a>
-<br><br><br>
-<a href="https://www.economie.gouv.fr/dgccrf/Publications/Vie-pratique/Fiches-pratiques/Allergene-alimentaire" target="_blank"><div class="dev"> Liste des Allergènes Officielle DGCCRF - La liste est disponible imprimée au magasin. </div></a>
-<a href="http://www.valentinlombardi.fr" target="_blank"><div class="dev"> Design & Développement: Valentin Lombardi </div></a>
-<div class="dev">Les Pizzas du Puits Vieux - Marque Déposéé à l'INPI - Société à responsabilité limitée - 43 rue du puits vieux 69800 Saint-Priest - tel:04 78 20 08 81 - SIRET 39783766700013  RCS Lyon B 397 837 667 </div>
-
-
-</div>
-
-
-</body>
-</html>
+{% endblock content %}

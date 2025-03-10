@@ -12,7 +12,7 @@ body {
 	width: 100%;
 	height: auto;
 	font-family: 'Arimo', sans-serif;
-	
+
 }
 
 a {
@@ -36,7 +36,7 @@ hr {
 	position: fixed;
 	z-index: 1000;
 	font-family: 'Arimo', sans-serif;
-	
+
 }
 
 .menu {
@@ -56,7 +56,7 @@ hr {
 	float: right;
 }
 
-a { 
+a {
 	color: #000;
 	text-decoration: none;
 }
@@ -82,7 +82,7 @@ a {
 	margin: auto;
 	padding-bottom: 20px;
 	}
-	
+
 .flagv {
 	width: 12px;
 	height: 12px;
@@ -91,9 +91,9 @@ a {
 	background-color: #55DF00;
 	border-radius: 10px;
 	float: left;
-	
+
 	}
-	
+
 .flagb {
 	width: 12px;
 	height: 12px;
@@ -102,7 +102,7 @@ a {
 	border-radius: 10px;
 	float: left;
 	}
-	
+
 .flagr {
 	width: 12px;
 	height: 12px;
@@ -111,7 +111,7 @@ a {
 	background-color: #F33;
 	border-radius: 10px;
 	}
-	
+
 
 
 /* ACCUEIL */
@@ -171,7 +171,7 @@ a {
 	font-size: 22px;
 	padding-top: 50px;
 	margin: auto;
-	
+
 	}
 
 .news-image {
@@ -193,7 +193,7 @@ a {
 .news-image:hover {
 	opacity :0.9;
 	transition: all 0.5s;
-	
+
 	}
 
 .news-texte {
@@ -318,7 +318,7 @@ a {
    -moz-box-shadow: 0 0 1px #FF4D68;
    box-shadow: 0 0 1px #FF4D68;
 }
-.view a.info: hover {
+.view a.info:hover {
    -webkit-box-shadow: 0 0 5px #000;
    -moz-box-shadow: 0 0 5px #000;
    box-shadow: 0 0 5px #000;
@@ -419,14 +419,14 @@ a {
    filter: alpha(opacity=100);
    opacity: 1;
 }
-				
+
 .info {
 	font-size: 13px;
 	margin-top: 10px;
 	border-radius: 3px;
 	padding: 5px;
 	color: #FFF;
-	background-color:#FF4D68;}				
+	background-color:#FF4D68;}
 
 /* PRESENTATION */
 
@@ -452,7 +452,7 @@ a {
 	font-size: 22px;
 	padding-top: 70px;
 	padding-left: 26%;
-	position: absolute;	
+	position: absolute;
 	float:left;
 }
 
@@ -608,5 +608,5 @@ a {
 .dev:hover {
 	color: #EEE;
 	transition: 0.5s;
-	
+
 }

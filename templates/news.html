@@ -1,0 +1,7 @@
+{% extends "structure/5-news.html" %}
+
+{% block news %}
+    {{ super() }}
+    {% set item = news[root.extra.news_item] %}
+    {% include "blocks/news-item.html" %}
+{% endblock news %}

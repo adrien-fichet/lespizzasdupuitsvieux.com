@@ -1,0 +1,427 @@
+---
+- title: Authentique
+  prices:
+    classic: 13,50€
+    teglia: 53,00€
+  components:
+    - tomate
+    - mozzarella
+    - gorgonzola
+    - roquette
+    - parmesan
+    - tomates cerise
+    - perlines de mozzarella
+
+- title: Black & White
+  prices:
+    classic: 12,00€
+  components:
+    - Nutella
+    - banane
+    - sucre glace
+
+- title: Bolognaise
+  prices:
+    classic: 12,00€
+    teglia: 45,00€
+  components:
+    - tomate
+    - viande
+    - aromates
+    - mozzarella
+
+- title: Bordelaise
+  prices:
+    classic: 13,00€
+    teglia: 49,00€
+  components:
+    - crème de cèpes
+    - ravioles
+    - mozzarella
+    - lardons
+    - crème
+
+- title: Botanique
+  prices:
+    classic: 13,80€
+    teglia: 50,00€
+  components:
+    - crème d'artichaut
+    - artichaut persillés
+    - mozzarella
+    - tomates cerise
+    - perlines de mozzarella
+    - olives
+
+- title: Bressane
+  prices:
+    classic: 12,00€
+    teglia: 43,00€
+  components:
+    - crème
+    - poulet
+    - mozzarella
+    - pesto
+
+- title: Bretonne
+  prices:
+    classic: 11,50€
+    teglia: 42,00€
+  components:
+    - crème
+    - jambon
+    - artichaut
+    - mozzarella
+
+- title: Campagnarde
+  prices:
+    classic: 11,00€
+    teglia: 40,00€
+  components:
+    - tomate
+    - oeufs battus
+    - lardons
+    - mozzarella
+
+- title: Capricieuse
+  prices:
+    classic: 11,00€
+    teglia: 40,00€
+  components:
+    - tomate
+    - poivrons
+    - oignons
+    - mozzarella
+
+- title: Carbonara
+  prices:
+    classic: 10,50€
+    teglia: 43,00€
+  components:
+    - tomate
+    - jambon
+    - mozzarella
+
+- title: Champignon
+  prices:
+    classic: 10,00€
+    teglia: 39,00€
+  components:
+    - tomate
+    - champignons
+    - mozzarella
+
+- title: Chef
+  prices:
+    classic: 12,00€
+    teglia: 45,00€
+  components:
+    - tomate
+    - champignons
+    - mozzarella
+    - chorizo
+    - lardons
+    - crème
+
+- title: Chevretine
+  prices:
+    classic: 10,50€
+    teglia: 39,00€
+  components:
+    - tomate
+    - mozzarella
+    - chèvre
+
+- title: Cht'i
+  prices:
+    classic: 13,00€
+    teglia: 43,00€
+  components:
+    - oignons
+    - crème
+    - mozzarella
+    - lardons
+    - maroilles
+
+- title: Délice
+  prices:
+    classic: 11,50€
+    teglia: 45,00€
+  components:
+    - tomate
+    - jambon cru
+    - oeuf
+    - mozzarella
+
+- title: Dessert
+  prices:
+    classic: 12,50€
+  components:
+    - amandes
+    - noisettes
+    - noix
+    - pralines
+    - crème
+    - sucre glace
+
+- title: Enfant
+  prices:
+    classic: 6,50€
+  components:
+    - tomate
+    - jambon
+    - mozzarella
+
+- title: Escargot
+  prices:
+    classic: 12,50€
+    teglia: 52,00€
+  components:
+    - tomate
+    - persillade
+    - escargots
+    - mozzarella
+
+- title: Florentine
+  prices:
+    classic: 12,00€
+    teglia: 49,00€
+  components:
+    - mozzarella
+    - crème
+    - gorgonzola
+    - coppa
+    - noix
+
+- title: Fermière
+  prices:
+    classic: 12,00€
+    teglia: 49,00€
+  components:
+    - mozzarella
+    - chèvre
+    - gorgonzola
+    - crème
+    - miel
+
+- title: Forestière
+  prices:
+    classic: 11,00€
+    teglia: 43,00€
+  components:
+    - champignons
+    - lardons
+    - mozzarella
+    - crème
+
+- title: Fromagère
+  prices:
+    classic: 12,00€
+    teglia: 45,00€
+  components:
+    - tomate
+    - mozzarella
+    - chèvre & bleu
+
+- title: Fruits de mer
+  prices:
+    classic: 11,80€
+    teglia: 48,00€
+  components:
+    - tomate
+    - fruits de mer
+    - olives
+    - mozzarella
+
+- title: Gourmande
+  prices:
+    classic: 11,80€
+    teglia: 43,00€
+  components:
+    - tomate
+    - champignons
+    - jambon
+    - mozzarella
+
+- title: Lyonnaise
+  prices:
+    classic: 12,80€
+    teglia: 49,00€
+  components:
+    - crème
+    - oignons
+    - andouille
+    - moutarde
+    - mozzarella
+
+- title: Maison
+  prices:
+    classic: 11,50€
+    teglia: 40,00€
+  components:
+    - tomate
+    - mortadelle
+    - chorizo
+    - jambon
+    - mozzarella
+
+- title: Marguerita
+  prices:
+    classic: 10,00€
+    teglia: 41,00€
+  components:
+    - tomate
+    - mozzarella
+    - olives
+
+- title: Milanaise
+  prices:
+    classic: 14,00€
+    teglia: 53,00€
+  components:
+    - tomate
+    - mozzarella
+    - coppa
+    - roquette
+    - tomate cerise
+    - fromage de brebis
+    - perlines de mozzarella
+
+- title: Montagnarde
+  prices:
+    classic: 13,00€
+    teglia: 49,00€
+  components:
+    - crème de cèpes
+    - pommes de terre
+    - mozzarella
+    - diots de savoie
+
+- title: Norvégienne
+  prices:
+    classic: 12,50€
+    teglia: 47,00€
+  components:
+    - saumon
+    - crème
+    - mozzarella
+
+- title: Orientale
+  prices:
+    classic: 11,80€
+    teglia: 43,00€
+  components:
+    - tomate
+    - poulet
+    - merguez
+    - mozzarella
+
+- title: Parmigianna
+  prices:
+    classic: 12,80€
+    teglia: 47,00€
+  components:
+    - tomate
+    - mozzarella
+    - boeuf haché
+    - aubergines grillés
+    - parmesan rapé
+
+- title: Pervenche
+  prices:
+    classic: 11,80€
+    teglia: 44,00€
+  components:
+    - tomate
+    - aubergines
+    - poulet
+    - mozzarella
+    - olives
+
+- title: Quatre Saisons
+  prices:
+    classic: 12,00€
+    teglia: 44,00€
+  components:
+    - tomate
+    - oignons
+    - poivrons
+    - champignons
+    - aubergines
+    - mozzarella
+
+- title: Québécoise
+  prices:
+    classic: 13,50€
+    teglia: 49,00€
+  components:
+    - Crème
+    - Mozzarella
+    - Bacon
+    - Chèvre
+    - Cramberry
+    - Noix de pécan
+    - Confiture de Cramberry
+    - Sirop d'érable
+
+- title: Romaine
+  prices:
+    classic: 10,50€
+    teglia: 41,00€
+  components:
+    - tomate
+    - anchois
+    - olives
+    - mozzarella
+
+- title: Roquefort
+  prices:
+    classic: 10,80€
+    teglia: 42,00€
+  components:
+    - tomate
+    - mozzarella
+    - roquefort
+
+- title: Savoyarde
+  prices:
+    classic: 12,50€
+    teglia: 48,00€
+  components:
+    - pommes de terre
+    - lardons
+    - oignons
+    - crème
+    - mozzarella
+    - reblochon
+
+- title: Spéciale
+  prices:
+    classic: 11,00€
+    teglia: 43,00€
+  components:
+    - oignons
+    - lardons
+    - crème
+    - mozzarella
+
+- title: Tartufo
+  prices:
+    classic: 14,50€
+  components:
+    - Crème de pecorino truffé
+    - Mozzarella fior di latte
+    - Roquette
+    - Jambon
+    - Pecorino truffé
+
+- title: Tonus
+  prices:
+    classic: 12,50€
+    teglia: 48,00€
+  components:
+    - tomate
+    - mozzarella
+    - bacon
+    - brie
+    - crème

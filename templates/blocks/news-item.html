@@ -1,0 +1,11 @@
+	<div class="news-image"><img src="{{ get_url(path=item.img) }}" width="auto" height="100%"></div>
+    <div class="news-texte">
+    	<div class="news-texte-content">
+        <h2>{{ item.title }}</h2><hr><br>
+        <h3>{{ item.subtitle | safe }}</h3><br>
+        <p>{{ item.text | safe }}</p><br>
+        <a href="{{ current_path ~ "#presentation"| replace(from="/#", to="#")  }}" class="info">
+          Voir la carte{% if item.dessert %} des desserts{% endif %}
+        </a></div>
+
+    </div>
