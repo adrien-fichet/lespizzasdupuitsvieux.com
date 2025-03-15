@@ -23,7 +23,7 @@ The new website is deployed on GitHub Pages: [adrien-fichet.github.io/lespizzasd
 
 - Visual comparisons using Playwright
 - A11y checks (accessibilitychecker.org?)
-- W3C CSS validity, link checker
+- W3C CSS validity
 - PageSpeed insights
 
 ## Original website copy
