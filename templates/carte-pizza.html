@@ -2,31 +2,34 @@
 
 {% block content %}
 
-	<div class="news-image"><img src="{{ get_url(path="sources/pizza-carte5.jpg") }}" width="auto" height="110%"></div>
-    <div class="news-texte">
-    	<div class="news-texte-content">
-        <h2>Pizzas ronde Classique</h2><hr>
-        <p>
-          {% for item in load_data(path="content/data/pizzas.yaml", format="yaml") %}
-           <h3>{{ item.title }} :</h3><h4>{{ item.prices.classic }}</h4>{{ item.components | join(sep=" - ") }}<br>
-          {% endfor %}
-        </p>
-    </div> </div>
+<div class="news-image news-image-pizza">
+  <img src="{{ get_url(path="sources/pizza-carte5.jpg") }}" alt="pizza-carte5">
+</div>
 
-    <div class="news-texte2">
-    	<div class="news-texte-content">
-        <h2>Pizzas TEGLIA pâte épaisse 40x60cm</h2><hr>
-        <p><h4>Uniquement sur commande 7 jours à l'avance, merci de votre compréhension.</h4><br>
-		   <p>
-        {% for item in load_data(path="content/data/pizzas.yaml", format="yaml") %}
-          {% if item.prices.teglia %}
-            <h3>{{ item.title }} :</h3><h4>{{ item.prices.teglia }}</h4>{{ item.components | join(sep=" - ") }}<br>
-          {% endif %}
-        {% endfor %}
-          </p><br>
-           <a href="{{ get_url(path="@/_index.md#presentation") }}" class="info">Retour carte</a></div>
-    </div> </div>
+<div class="news-texte">
+	<div class="news-texte-content">
+    <h2>Pizzas ronde Classique</h2><hr>
+    <p>
+      {% for item in load_data(path="content/data/pizzas.yaml", format="yaml") %}
+       <h3>{{ item.title }} :</h3><h4>{{ item.prices.classic }}</h4>{{ item.components | join(sep=" - ") }}<br>
+      {% endfor %}
+    </p>
+  </div>
+</div>
 
+<div class="news-texte2">
+	<div class="news-texte-content">
+    <h2>Pizzas TEGLIA pâte épaisse 40x60cm</h2><hr>
+    <p>
+      <h4>Uniquement sur commande 7 jours à l'avance, merci de votre compréhension.</h4><br>
+      {% for item in load_data(path="content/data/pizzas.yaml", format="yaml") %}
+        {% if item.prices.teglia %}
+          <h3>{{ item.title }} :</h3><h4>{{ item.prices.teglia }}</h4>{{ item.components | join(sep=" - ") }}<br>
+        {% endif %}
+      {% endfor %}
+    </p><br>
+    <a href="{{ get_url(path="@/_index.md#presentation") }}" class="info">Retour carte</a>
+  </div>
 </div>
 
 {% endblock content %}

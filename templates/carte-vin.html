@@ -3,21 +3,23 @@
 {% block content %}
 
 {% for item in load_data(path="content/data/boissons.yaml", format="yaml") %}
-	<div class="news-image-vin"><img src="{{ get_url(path=item.img) }}" width="auto" height="110%"></div>
-    <div class="news-texte-vin">
-    	<div class="news-texte-content">
-        <h2>{{ item.title }}</h2><hr><br>
-        <h4>{{ item.description | safe }}</h4><br>
-				<p>
+<div class="news-image-vin">
+	<img src="{{ get_url(path=item.img) }}">
+</div>
 
-				{% if item.text %}
-					{{ item.text | safe }}
-					<br><br>
-				{% endif %}
-
-				<a href="{{ get_url(path="@/_index.md#presentation") }}" class="info">Retour carte</a>
-				</p><br>
-    </div> </div>
+<div class="news-texte-vin">
+	<div class="news-texte-content">
+		<h2>{{ item.title }}</h2><hr><br>
+		<h4>{{ item.description | safe }}</h4><br>
+		<p>
+			{% if item.text %}
+				{{ item.text | safe }}
+				<br><br>
+			{% endif %}
+			<a href="{{ get_url(path="@/_index.md#presentation") }}" class="info">Retour carte</a>
+		</p><br>
+	</div>
+</div>
 {% endfor %}
 
 {% endblock content %}

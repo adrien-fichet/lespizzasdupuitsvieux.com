@@ -13,6 +13,16 @@
   height: 110%;
 }
 
+.news-image-pizza img {
+  width: auto;
+  height: 110%;
+}
+
+.news-image img {
+  width: auto;
+  height: 100%;
+}
+
 .view img {
   width: auto;
   height: 250px;
