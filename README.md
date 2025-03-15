@@ -19,9 +19,20 @@ Run the Zola development server with: `zola serve --open`
 
 The new website is deployed on GitHub Pages: [adrien-fichet.github.io/lespizzasdupuitsvieux.com/](https://adrien-fichet.github.io/lespizzasdupuitsvieux.com/)
 
+## Visual comparisons using Playwright
+
+In order to verify that the new website is visually identical to the original website, visual comparisons tests using
+[Playwright](https://playwright.dev/docs/test-snapshots) are used.
+
+Launch the tests with:
+
+```shell
+bun install && bun playwright install chromium
+bun playwright test
+```
+
 ## TODO
 
-- Visual comparisons using Playwright
 - A11y checks (accessibilitychecker.org?)
 - W3C CSS validity
 - PageSpeed insights
