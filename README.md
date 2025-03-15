@@ -19,12 +19,23 @@ Run the Zola development server with: `zola serve --open`
 
 The new website is deployed on GitHub Pages: [adrien-fichet.github.io/lespizzasdupuitsvieux.com/](https://adrien-fichet.github.io/lespizzasdupuitsvieux.com/)
 
+## W3C HTML checker
+
+- https://validator.w3.org/nu/?doc=https%3A%2F%2Fadrien-fichet.github.io%2Flespizzasdupuitsvieux.com%2Findex.html
+- https://validator.w3.org/nu/?doc=https%3A%2F%2Fadrien-fichet.github.io%2Flespizzasdupuitsvieux.com%2Fcarte-dessert.html
+- https://validator.w3.org/nu/?doc=https%3A%2F%2Fadrien-fichet.github.io%2Flespizzasdupuitsvieux.com%2Fcarte-pizza.html
+- https://validator.w3.org/nu/?doc=https%3A%2F%2Fadrien-fichet.github.io%2Flespizzasdupuitsvieux.com%2Fcarte-vin.html
+- https://validator.w3.org/nu/?doc=https%3A%2F%2Fadrien-fichet.github.io%2Flespizzasdupuitsvieux.com%2Fnews-burger.html
+- https://validator.w3.org/nu/?doc=https%3A%2F%2Fadrien-fichet.github.io%2Flespizzasdupuitsvieux.com%2Fnews-calzone.html
+- https://validator.w3.org/nu/?doc=https%3A%2F%2Fadrien-fichet.github.io%2Flespizzasdupuitsvieux.com%2Fnews-lasagnes.html
+- https://validator.w3.org/nu/?doc=https%3A%2F%2Fadrien-fichet.github.io%2Flespizzasdupuitsvieux.com%2Fnews-tiramisu.html
+
 ## TODO
 
 - Check if the IE tags are still needed (use html5shiv instead?)
 - Visual comparisons using Playwright
 - A11y checks (accessibilitychecker.org?)
-- W3C Markup and CSS validity, link checker
+- W3C CSS validity, link checker
 - PageSpeed insights
 
 ## Original website copy
