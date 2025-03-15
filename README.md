@@ -19,6 +19,14 @@ Run the Zola development server with: `zola serve --open`
 
 The new website is deployed on GitHub Pages: [adrien-fichet.github.io/lespizzasdupuitsvieux.com/](https://adrien-fichet.github.io/lespizzasdupuitsvieux.com/)
 
+## TODO
+
+- Check if the IE tags are still needed (use html5shiv instead?)
+- Visual comparisons using Playwright
+- A11y checks (accessibilitychecker.org?)
+- W3C Markup and CSS validity, link checker
+- PageSpeed insights
+
 ## Original website copy
 
 A copy of the original website is available in `_original`.

@@ -3,14 +3,16 @@
 {% block content %}
 
 {% for item in load_data(path="content/data/desserts.yaml", format="yaml") %}
-	<div class="news-image-vin"><img src="{{ get_url(path=item.img) }}" width="auto" height="110%"></div>
-    <div class="news-texte-vin">
-    	<div class="news-texte-content">
-        <h2>{{ item.title }} - {{ item.price }}</h2><hr><br>
-        <h4>{{ item.subtitle | safe }}</h4><br>
-        <p>{{ item.text | safe }}<br><br><br>
-			</p><br>
-    </div> </div>
+<div class="news-image-vin">
+	<img src="{{ get_url(path=item.img) }}" alt="news-image-vin">
+</div>
+<div class="news-texte-vin">
+	<div class="news-texte-content">
+		<h2>{{ item.title }} - {{ item.price }}</h2><hr><br>
+		<h4>{{ item.subtitle | safe }}</h4><br>
+		<p>{{ item.text | safe }}<br><br><br></p><br>
+	</div>
+</div>
 {% endfor %}
 
 {% endblock content %}

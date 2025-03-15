@@ -1,34 +1,53 @@
 {% extends "structure/4-title.html" %}
 
 {% block css %}
-<link rel="stylesheet" href="{{ get_url(path="css/home.css") }}" />
+<link rel="stylesheet" href="{{ get_url(path="css/home.css") }}">
 {% endblock css %}
 
 {% block header %}
 <div class="header">
 	<div class="menu">
-    <div id="logo"><a href="{{ get_url(path="@/_index.md") }}"><img src="{{ get_url(path="sources/logo.png") }}" width="auto" height="17px"></a></div>
-    	<a href="#contact"><div class="onglet"> Contact </div></a>
-        <a href="#presentation"><div class="onglet"> Carte </div></a>
-        <a href="#news"><div class="onglet"> News </div></a>
-        <a href="{{ get_url(path="@/_index.md") }}"><div class="onglet" id="onglet1"> Accueil </div></a>
+    <div id="logo">
+      <a href="{{ get_url(path="@/_index.md") }}">
+        <img src="{{ get_url(path="sources/logo.png") }}" alt="logo">
+      </a>
     </div>
+   	<a href="#contact"><div class="onglet"> Contact </div></a>
+    <a href="#presentation"><div class="onglet"> Carte </div></a>
+    <a href="#news"><div class="onglet"> News </div></a>
+    <a href="{{ get_url(path="@/_index.md") }}"><div class="onglet" id="onglet1"> Accueil </div></a>
+  </div>
 </div>
 {% endblock header %}
 
 {% block footer %}
 <div class="footer">
-<div class="link"><a href="https://www.facebook.com/pages/Les-pizzas-du-puits-vieux/103684396457692?fref=ts&locale=fr_FR" target="_blank"><img src="{{ get_url(path="sources/fb.png") }}" width="35x" height="auto"></a><br><br> Suivez notre actualité sur facebook<br><br><br><br>
-<a href="{{ get_url(path="@/_index.md") }}"><div class="onglet-footer"> Accueil </div></a>
-<a href="#news"><div class="onglet-footer"> News </div></a>
-<a href="#presentation"><div class="onglet-footer"> Carte </div></a>
-<a href="#contact"><div class="onglet-footer"> Contact </div></a>
-<br><br><br>
-<a href="https://www.economie.gouv.fr/dgccrf/Publications/Vie-pratique/Fiches-pratiques/Allergene-alimentaire" target="_blank"><div class="dev"> Liste des Allergènes Officielle DGCCRF - La liste est disponible imprimée au magasin. </div></a>
-<a href="http://www.valentinlombardi.fr" target="_blank"><div class="dev"> Design & Développement: Valentin Lombardi </div></a>
-<div class="dev">Les Pizzas du Puits Vieux - Marque Déposéé à l'INPI - Société à responsabilité limitée - 43 rue du puits vieux 69800 Saint-Priest - tel:04 78 20 08 81 - SIRET 39783766700013  RCS Lyon B 397 837 667 </div>
-
-
+  <div class="link">
+    <a href="https://www.facebook.com/pages/Les-pizzas-du-puits-vieux/103684396457692?fref=ts&locale=fr_FR" target="_blank">
+      <img src="{{ get_url(path="sources/fb.png") }}" alt="fb">
+    </a>
+    <br><br> Suivez notre actualité sur facebook<br><br><br><br>
+    <a href="{{ get_url(path="@/_index.md") }}">
+      <div class="onglet-footer"> Accueil </div>
+    </a>
+    <a href="#news">
+      <div class="onglet-footer"> News </div>
+    </a>
+    <a href="#presentation">
+      <div class="onglet-footer"> Carte </div>
+    </a>
+    <a href="#contact">
+      <div class="onglet-footer"> Contact </div>
+    </a>
+    <br><br><br>
+    <a href="https://www.economie.gouv.fr/dgccrf/Publications/Vie-pratique/Fiches-pratiques/Allergene-alimentaire" target="_blank">
+      <div class="dev"> Liste des Allergènes Officielle DGCCRF - La liste est disponible imprimée au magasin. </div>
+    </a>
+    <a href="http://www.valentinlombardi.fr" target="_blank">
+      <div class="dev"> Design &amp; Développement: Valentin Lombardi </div>
+    </a>
+    <div class="dev">Les Pizzas du Puits Vieux - Marque Déposéé à l'INPI - Société à responsabilité limitée - 43 rue du puits vieux 69800 Saint-Priest - tel:04 78 20 08 81 - SIRET 39783766700013  RCS Lyon B 397 837 667</div>
+  </div>
 </div>
 {% endblock footer %}
 
@@ -38,111 +57,116 @@
 {% set news = load_data(path="content/data/news.yaml", format="yaml") %}
 {% endblock news %}
 
-    <div class="bloc-actu">
-
-    	<div class="view view-tenth">
-                    <img src="{{ get_url(path="sources/onglet-plaque.jpg") }}" width="auto" height="250"/>
-                    <div class="mask">
-                        <h2>NOUVELLE RECETTE ! </h2>
-                        <p>Pizza Teglia, Nouvelle recette !</p>
-                        <a href="{{ get_url(path="@/_index.md#news") }}" class="info">Voir plus</a>
-                    </div>
-        </div>
-
-        <div class="view view-tenth">
-                    <img src="{{ get_url(path="sources/onglet-tiramisu.jpg") }}" width="auto" height="250"/>
-                    <div class="mask">
-                        <h2>NOUVEAU</h2>
-                        <p>Nos recettes du moment</p>
-                        <a href="{{ get_url(path="news-tiramisu.html#news") }}" class="info">Voir plus</a>
-                    </div>
-        </div>
-
-
-    	<div class="view view-tenth">
-                    <img src="{{ get_url(path="sources/calzone-onglet.jpg") }}" width="auto" height="250"/>
-                    <div class="mask">
-                        <h2>NOUVEAU </h2>
-                        <p>Le Calzone à 11,00€</p>
-                        <a href="{{ get_url(path="news-calzone.html#news") }}" class="info">Voir plus</a>
-                    </div>
-        </div>
-
-        <div class="view view-tenth">
-                    <img src="{{ get_url(path="sources/glaces-2.png") }}" width="auto" height="250"/>
-                    <div class="mask">
-                        <h2>Gemelli - Gelati & Sorbetti</h2>
-                        <p>Glaces et sorbets italiens légers et naturels</p>
-                        <a href="{{ get_url(path="@/carte-dessert.md") }}" class="info">Voir plus</a>
-                    </div>
-        </div>
-
-
-        <div class="view view-tenth">
-                    <img src="{{ get_url(path="sources/lasagnes.jpg") }}" width="auto" height="250"/>
-                    <div class="mask">
-                        <h2>Lasagnes</h2>
-                        <p>Lasagnes faites maison..</p>
-                        <a href="{{ get_url(path="news-lasagnes.html#news") }}" class="info">Voir plus</a>
-                    </div>
-        </div>
-
-        <div class="view view-tenth">
-                    <img src="{{ get_url(path="sources/news.jpg") }}" width="auto" height="250"/>
-                    <div class="mask">
-                        <h2>Pizza Burger</h2>
-                        <p>Authentique réinterprétation d'un burger dans le respect de la pizza traditionnelle...</p>
-                        <a href="{{ get_url(path="news-burger.html#news") }}" class="info">Voir plus</a>
-                    </div>
-        </div>
-
-
-
+<div class="bloc-actu">
+  <div class="view view-tenth">
+    <img src="{{ get_url(path="sources/onglet-plaque.jpg") }}" alt="onglet-plaque">
+    <div class="mask">
+      <h2>NOUVELLE RECETTE ! </h2>
+      <p>Pizza Teglia, Nouvelle recette !</p>
+      <a href="{{ get_url(path="@/_index.md#news") }}" class="info">Voir plus</a>
     </div>
+  </div>
+  <div class="view view-tenth">
+    <img src="{{ get_url(path="sources/onglet-tiramisu.jpg") }}" alt="tiramisu">
+    <div class="mask">
+      <h2>NOUVEAU</h2>
+      <p>Nos recettes du moment</p>
+      <a href="{{ get_url(path="news-tiramisu.html#news") }}" class="info">Voir plus</a>
+    </div>
+  </div>
+  <div class="view view-tenth">
+    <img src="{{ get_url(path="sources/calzone-onglet.jpg") }}" alt="calzone">
+    <div class="mask">
+      <h2>NOUVEAU </h2>
+      <p>Le Calzone à 11,00€</p>
+      <a href="{{ get_url(path="news-calzone.html#news") }}" class="info">Voir plus</a>
+    </div>
+  </div>
+  <div class="view view-tenth">
+    <img src="{{ get_url(path="sources/glaces-2.png") }}" alt="glaces-2">
+    <div class="mask">
+      <h2>Gemelli - Gelati & Sorbetti</h2>
+      <p>Glaces et sorbets italiens légers et naturels</p>
+      <a href="{{ get_url(path="@/carte-dessert.md") }}" class="info">Voir plus</a>
+    </div>
+  </div>
+  <div class="view view-tenth">
+    <img src="{{ get_url(path="sources/lasagnes.jpg") }}" alt="lasagnes">
+    <div class="mask">
+      <h2>Lasagnes</h2>
+      <p>Lasagnes faites maison..</p>
+      <a href="{{ get_url(path="news-lasagnes.html#news") }}" class="info">Voir plus</a>
+    </div>
+  </div>
+  <div class="view view-tenth">
+    <img src="{{ get_url(path="sources/news.jpg") }}" alt="burger">
+    <div class="mask">
+      <h2>Pizza Burger</h2>
+      <p>Authentique réinterprétation d'un burger dans le respect de la pizza traditionnelle...</p>
+      <a href="{{ get_url(path="news-burger.html#news") }}" class="info">Voir plus</a>
+    </div>
+  </div>
+</div>
 
 </div>
 
 <div class="presentation" id="presentation">
-<img src="{{ get_url(path="sources/IMG_76372.jpg") }}" width="100%" height="auto">
+  <img src="{{ get_url(path="sources/IMG_76372.jpg") }}" alt="presentation">
 	<div class="pres-titre">
-    	<p> NOTRE CARTE <hr> </p><br>
-        	<div class="flag">
-            	<div class="flagv"></div><div class="flagb"></div><div class="flagr"></div>
-        	</div><br>
-        <h1> Depuis 1987 la pizzeria du puits vieux met un point d'honneur à proposer une carte de qualité irréprochable. Tous nos produits sont sont frais, sélectionnés, et cuisinés par nos soins pour vous proposer plats et pizzas de qualité, dans le respect de la cuisine traditionnelle italienne.<br><br>
- Situé au 43, rue du puis vieux à Saint Priest, notre équipe vous accueille tous les jours du Lundi au Dimanche de 17h à 21h.</h1><br><br><br><br><br><br><br>
+    <p> NOTRE CARTE </p><hr><br>
+    <div class="flag">
+      <div class="flagv"></div>
+      <div class="flagb"></div>
+      <div class="flagr"></div>
+    </div><br>
+    <h1>
+      Depuis 1987 la pizzeria du puits vieux met un point d'honneur à proposer une carte de qualité irréprochable. Tous nos produits sont sont frais, sélectionnés, et cuisinés par nos soins pour vous proposer plats et pizzas de qualité, dans le respect de la cuisine traditionnelle italienne.<br><br>
+      Situé au 43, rue du puis vieux à Saint Priest, notre équipe vous accueille tous les jours du Lundi au Dimanche de 17h à 21h.
+    </h1><br><br><br><br><br><br><br>
     <div class="carte-pizza" id="carte">
-    	<a href="{{ get_url(path="@/carte-vin.md") }}"><div class="picto-boisson">
-        	<img src="{{ get_url(path="sources/boisson.png") }}" ><br><br><br><br><br><br>
+    	<a href="{{ get_url(path="@/carte-vin.md") }}">
+        <div class="picto-boisson">
+        	<img src="{{ get_url(path="sources/boisson.png") }}" alt="boisson"><br><br><br><br><br><br>
         	<div  class="bouton-carte">BOISSONS </div>
-        </div></a>
-    	<a href="{{ get_url(path="@/carte-pizza.md") }}"><div class="picto-pizza">
-        	<img src="{{ get_url(path="sources/pizza2.png") }}" ><br><br><br><br><br><br>
+        </div>
+      </a>
+    	<a href="{{ get_url(path="@/carte-pizza.md") }}">
+        <div class="picto-pizza">
+        	<img src="{{ get_url(path="sources/pizza2.png") }}" alt="pizza2"><br><br><br><br><br><br>
         	<div  class="bouton-carte"> PIZZAS </div>
-        </div></a>
-        <a href="{{ get_url(path="@/carte-dessert.md") }}"><div class="picto-dessert">
-        	<img src="{{ get_url(path="sources/dessert.png") }}"><br><br><br><br><br>
+        </div>
+      </a>
+      <a href="{{ get_url(path="@/carte-dessert.md") }}">
+        <div class="picto-dessert">
+        	<img src="{{ get_url(path="sources/dessert.png") }}" alt="dessert"><br><br><br><br><br>
         	<div  class="bouton-carte"> DESSERTS </div>
-        </div></a>
+        </div>
+      </a>
     </div>
-
-</div>
+  </div>
 </div>
 
 <div class="contact" id="contact">
-	<div class="infos"><p> Les Pizzas du Puits Vieux<br>
-						   43 rue du puits vieux<br>
-						   69800 Saint-Priest</p> <br>
-                           <hr>
-                           <p><br> Ouverture: <br>
-                           Du lundi au Dimanche <br>
-						   de 17h à 21h<br>
-Horaires d'été 18h à 22h jusqu'au 1er Octobre</p><br> <hr>
-                           <p><br>Pour commander par téléphone: <br>
-						   04.78.20.08.81<br></p></div>
-
-    <div class="carte">
-    	<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2786.5912665860346!2d4.950159!3d45.699174!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4c47453ca1735%3A0x7db0ac0f80bb003d!2sLes+Pizzas+du+Puits+Vieux!5e0!3m2!1sfr!2sfr!4v1425339203885" width="100%" height="400px" frameborder="0" style="border:0"></iframe>
-    </div>
+	<div class="infos">
+    <p>
+      Les Pizzas du Puits Vieux<br>
+      43 rue du puits vieux<br>
+      69800 Saint-Priest
+    </p> <br>
+    <hr>
+    <p>
+      <br> Ouverture: <br>
+      Du lundi au Dimanche <br>
+      de 17h à 21h<br>
+      Horaires d'été 18h à 22h jusqu'au 1er Octobre
+    </p><br> <hr>
+    <p>
+      <br>Pour commander par téléphone: <br>
+      04.78.20.08.81<br>
+    </p>
+  </div>
+  <div class="carte">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2786.5912665860346!2d4.950159!3d45.699174!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4c47453ca1735%3A0x7db0ac0f80bb003d!2sLes+Pizzas+du+Puits+Vieux!5e0!3m2!1sfr!2sfr!4v1425339203885"></iframe>
+  </div>
 </div>
 {% endblock content %}

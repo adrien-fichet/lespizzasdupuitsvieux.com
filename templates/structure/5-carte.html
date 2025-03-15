@@ -1,18 +1,22 @@
 {% extends "structure/4-title.html" %}
 
 {% block css %}
-<link rel="stylesheet" href="{{ get_url(path="css/carte.css") }}" />
+<link rel="stylesheet" href="{{ get_url(path="css/carte.css") }}">
 {% endblock css %}
 
 {% block header %}
 <div class="header">
 	<div class="menu">
-    <div id="logo"><a href="{{ get_url(path="@/_index.md") }}"><img src="{{ get_url(path="sources/logo.png") }}" width="auto" height="17px"></a></div>
-    	<a href="{{ get_url(path="@/_index.md#contact") }}"><div class="onglet"> Contact </div></a>
-        <a href="{{ get_url(path="@/_index.md#presentation") }}"><div class="onglet"> Carte </div></a>
-        <a href="{{ get_url(path="@/_index.md#news") }}"><div class="onglet"> News </div></a>
-        <a href="{{ get_url(path="@/_index.md") }}"><div class="onglet" id="onglet1"> Accueil </div></a>
+    <div id="logo">
+      <a href="{{ get_url(path="@/_index.md") }}">
+        <img src="{{ get_url(path="sources/logo.png") }}" alt="logo">
+      </a>
     </div>
+    <a href="{{ get_url(path="@/_index.md#contact") }}"><div class="onglet"> Contact </div></a>
+    <a href="{{ get_url(path="@/_index.md#presentation") }}"><div class="onglet"> Carte </div></a>
+    <a href="{{ get_url(path="@/_index.md#news") }}"><div class="onglet"> News </div></a>
+    <a href="{{ get_url(path="@/_index.md") }}"><div class="onglet" id="onglet1"> Accueil </div></a>
+  </div>
 </div>
 {% endblock header %}
 
