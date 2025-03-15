@@ -4,7 +4,7 @@
 
 {% for item in load_data(path="content/data/boissons.yaml", format="yaml") %}
 <div class="news-image-vin">
-	<img src="{{ get_url(path=item.img) }}">
+	<img src="{{ get_url(path=item.img) }}" alt="news-image-vin">
 </div>
 
 <div class="news-texte-vin">
