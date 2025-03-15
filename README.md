@@ -46,3 +46,7 @@ wget -mkEpnp http://lespizzasdupuitsvieux.com
 - https://validator.w3.org/nu/?doc=https%3A%2F%2Fadrien-fichet.github.io%2Flespizzasdupuitsvieux.com%2Fnews-calzone.html
 - https://validator.w3.org/nu/?doc=https%3A%2F%2Fadrien-fichet.github.io%2Flespizzasdupuitsvieux.com%2Fnews-lasagnes.html
 - https://validator.w3.org/nu/?doc=https%3A%2F%2Fadrien-fichet.github.io%2Flespizzasdupuitsvieux.com%2Fnews-tiramisu.html
+
+## W3C Link checker
+
+- https://validator.w3.org/checklink?uri=https%3A%2F%2Fadrien-fichet.github.io%2Flespizzasdupuitsvieux.com
