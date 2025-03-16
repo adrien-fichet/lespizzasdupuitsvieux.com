@@ -3,6 +3,6 @@ template = "carte-vin.html"
 path = "carte-vin.html"
 title = "NOS BOISSONS"
 [extra]
-home_img = "sources/amaro.jpg"
+home_img = "img/amaro.jpg"
 news_class = "news-vin"
 +++

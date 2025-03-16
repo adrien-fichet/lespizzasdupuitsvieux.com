@@ -1,6 +1,6 @@
 ---
 - title: Carte des vins
-  img: sources/vin.jpg
+  img: img/vin.jpg
   description: >-
     Pour accompagner votre repas, les pizzas du puits vieux vous propose <br>
     une sélection de vins italiens, blanc, rouge ou rosé.
@@ -14,7 +14,7 @@
     Valpolicella<br>
 
 - title: NOUVEAU - Spritz - 3,50€
-  img: sources/spritz.jpg
+  img: img/spritz.jpg
   description: Nouveau, le cocktail préféré des Italiens dans votre pizzeria.
   text: >-
     Bouteille de 250mL de la gamme "EspritzLibre" prêt à consommer.<br>
