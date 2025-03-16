@@ -13,15 +13,11 @@
 	<link rel="stylesheet" href="{{ get_url(path="css/reset.css") }}">
 	<link rel="stylesheet" href="{{ get_url(path="css/common.css") }}">
 	{% block css %} {% endblock %}
-
-	<script src="{{ get_url(path="js/html5shiv.js") }}"></script>
-	<script src="{{ get_url(path="js/jquery-1.9.1.min.js") }}"></script>
-	<script src="{{ get_url(path="js/jquery.scrollTo.js") }}"></script>
-	<script src="{{ get_url(path="js/main.js") }}"></script>
 </head>
 
 <body>
   {% block body %} {% endblock %}
+	<script src="{{ get_url(path="js/html5shiv.js") }}"></script>
 </body>
 
 {% endblock html %}
