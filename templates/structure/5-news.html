@@ -21,6 +21,8 @@
 {% endblock header %}
 
 {% block footer %}
+{% include "blocks/presentation.html" %}
+{% include "blocks/contact.html" %}
 <div class="footer">
   <div class="link">
     <a href="https://www.facebook.com/pages/Les-pizzas-du-puits-vieux/103684396457692?fref=ts&locale=fr_FR" target="_blank">
@@ -100,65 +102,4 @@
   </div>
 </div>
 
-</div>
-
-<div class="presentation" id="presentation">
-  <img src="{{ get_url(path="sources/IMG_76372.jpg") }}" alt="presentation">
-	<div class="pres-titre">
-    <p> NOTRE CARTE </p><hr><br>
-    <div class="flag">
-      <div class="flagv"></div>
-      <div class="flagb"></div>
-      <div class="flagr"></div>
-    </div><br>
-    <h1>
-      Depuis 1987 la pizzeria du puits vieux met un point d'honneur à proposer une carte de qualité irréprochable. Tous nos produits sont sont frais, sélectionnés, et cuisinés par nos soins pour vous proposer plats et pizzas de qualité, dans le respect de la cuisine traditionnelle italienne.<br><br>
-      Situé au 43, rue du puis vieux à Saint Priest, notre équipe vous accueille tous les jours du Lundi au Dimanche de 17h à 21h.
-    </h1><br><br><br><br><br><br><br>
-    <div class="carte-pizza" id="carte">
-    	<a href="{{ get_url(path="@/carte-vin.md") }}">
-        <div class="picto-boisson">
-        	<img src="{{ get_url(path="sources/boisson.png") }}" alt="boisson"><br><br><br><br><br><br>
-        	<div  class="bouton-carte">BOISSONS </div>
-        </div>
-      </a>
-    	<a href="{{ get_url(path="@/carte-pizza.md") }}">
-        <div class="picto-pizza">
-        	<img src="{{ get_url(path="sources/pizza2.png") }}" alt="pizza2"><br><br><br><br><br><br>
-        	<div  class="bouton-carte"> PIZZAS </div>
-        </div>
-      </a>
-      <a href="{{ get_url(path="@/carte-dessert.md") }}">
-        <div class="picto-dessert">
-        	<img src="{{ get_url(path="sources/dessert.png") }}" alt="dessert"><br><br><br><br><br>
-        	<div  class="bouton-carte"> DESSERTS </div>
-        </div>
-      </a>
-    </div>
-  </div>
-</div>
-
-<div class="contact" id="contact">
-	<div class="infos">
-    <p>
-      Les Pizzas du Puits Vieux<br>
-      43 rue du puits vieux<br>
-      69800 Saint-Priest
-    </p> <br>
-    <hr>
-    <p>
-      <br> Ouverture: <br>
-      Du lundi au Dimanche <br>
-      de 17h à 21h<br>
-      Horaires d'été 18h à 22h jusqu'au 1er Octobre
-    </p><br> <hr>
-    <p>
-      <br>Pour commander par téléphone: <br>
-      04.78.20.08.81<br>
-    </p>
-  </div>
-  <div class="carte">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2786.5912665860346!2d4.950159!3d45.699174!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4c47453ca1735%3A0x7db0ac0f80bb003d!2sLes+Pizzas+du+Puits+Vieux!5e0!3m2!1sfr!2sfr!4v1425339203885"></iframe>
-  </div>
-</div>
 {% endblock content %}
